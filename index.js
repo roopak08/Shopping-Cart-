@@ -126,7 +126,7 @@ const View = (() => {
         <li data-id="${item.id}">
           ${item.content}
           <button class="minus-btn">-</button>
-          <input type="text" disabled value="1">
+          <input type="text" disabled value="0">
           <button class="plus-btn">+</button>
           <button class="add-btn">add to cart</button>
         </li>
@@ -191,8 +191,10 @@ const Controller = ((model, view) => {
   
       const item = state.inventory.find((item) => item.id === id);
       const cartItem = state.cart.find((item) => item.id === id);
-  
-      if (cartItem) {
+     
+      if(amount>0)
+      {
+        if (cartItem) {
         model.updateCart(id, cartItem.amount + amount).then(() => {
           state.cart = state.cart.map((item) =>
             item.id === id ? { ...item, amount: item.amount + amount } : item
@@ -202,7 +204,7 @@ const Controller = ((model, view) => {
         model.addToCart({ ...item, amount }).then((newItem) => {
           state.cart = [...state.cart, newItem];
         });
-      }
+      }}
     }
   };
 
