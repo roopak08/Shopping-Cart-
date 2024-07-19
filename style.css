@@ -1,0 +1,118 @@
+   body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+  
+  #app {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(225, 224, 221);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .inventory-container, .cart-container {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f3f3e9;
+  }
+  
+  li.text {
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-btn, .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .checkout-btn {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 10px;
+  }
+  
+  .delete-btn {
+    background-color: #d9534f;
+  }
+  
+  .add-btn {
+    background-color: #5c67b8;
+  }
+  
+  .minus-btn {
+    background-color: #d9534f;
+    color: white;
+    border-radius: 15%;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plus-btn {
+    background-color: #56d94f;
+    color: white;
+    border-radius: 15%;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input {
+    width: 30px;
+    text-align: center;
+  }
+  
